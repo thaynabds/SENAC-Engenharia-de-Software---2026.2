@@ -1,0 +1,22 @@
+﻿ID,História de Usuário,MoSCoW,Valor,Justificativa
+US01,"Como estudante, quero criar uma conta para acessar o aplicativo.",Must Have,Alto,Requisito básico de acesso.
+US02,"Como estudante, quero realizar login para acessar minha conta com segurança.",Must Have,Alto,Necessário para autenticação.
+US03,"Como estudante, quero informar meu curso e disciplinas de interesse para encontrar pessoas com objetivos semelhantes.",Must Have,Muito alto,Fundamenta a compatibilidade acadêmica.
+US04,"Como estudante, quero informar meus horários disponíveis para encontrar grupos compatíveis.",Must Have,Muito alto,Resolve diretamente o problema dos horários conflitantes.
+US05,"Como estudante, quero visualizar estudantes com interesses e horários compatíveis.",Must Have,Muito alto,Permite encontrar potenciais integrantes.
+US06,"Como estudante, quero criar um grupo de estudos.",Must Have,Muito alto,Função central do produto.
+US07,"Como estudante, quero participar de um grupo existente.",Must Have,Muito alto,Permite aderir a grupos existentes.
+US08,"Como estudante, quero escolher entre encontro presencial ou online.",Must Have,Muito alto,Atende diferentes restrições.
+US09,"Como estudante, quero definir data e horário para um encontro.",Must Have,Muito alto,Necessário para organização.
+US10,"Como integrante, quero visualizar os encontros agendados do grupo.",Should Have,Alto,Melhora a organização.
+US11,"Como integrante, quero receber notificações sobre encontros e alterações.",Should Have,Alto,Reduz perda de informações.
+US12,"Como integrante, quero conversar com os participantes do grupo.",Should Have,Alto,Facilita coordenação.
+US13,"Como estudante, quero editar minha disponibilidade quando meus horários mudarem.",Should Have,Alto,A rotina é variável.
+US14,"Como estudante, quero editar meus interesses acadêmicos.",Should Have,Médio alto,Mantém os dados atualizados.
+US15,"Como integrante, quero cancelar minha participação em um encontro.",Could Have,Médio,"Útil, mas não essencial."
+US16,"Como estudante, quero receber sugestões automáticas de grupos compatíveis.",Could Have,Médio,Agrega valor após validação.
+US17,"Como estudante, quero avaliar a experiência com um grupo.",Could Have,Médio,Gera feedback.
+US18,"Como estudante, quero visualizar meu histórico de grupos e encontros.",Could Have,Baixo,Recurso complementar.
+US19,"Como estudante, quero integrar os encontros ao calendário do dispositivo.",Could Have,Baixo,Facilita a agenda.
+US20,"Como estudante, quero receber recomendações inteligentes de horários.",Won't Have agora,Baixo,Depende de dados e validação.
+US21,"Como estudante, quero receber recomendações baseadas no meu comportamento histórico.",Won't Have agora,Baixo,Exige dados históricos e maturidade.
