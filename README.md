@@ -46,7 +46,7 @@ Estudante de **Análise e Desenvolvimento de Sistemas** — Faculdade Senac Reci
 
 <div align="center">
 
-Feito com 💜 por **Thayná Batista da Silva** para o **A Unidae Currícular CodingÇ Mobile da Faculdade Senac Recife-PE, Tecnólogo em Análise e Desenvolvimento de Sistemas, 2026.2, Professor Ícaro Santos Ferreira**
+Feito com 💜 por **Thayná Batista da Silva** para o **A Unidade Currícular Engenharia de Software da Faculdade Senac Recife-PE, Tecnólogo em Análise e Desenvolvimento de Sistemas, 2026.2, Professora Sonia Gomes de Oliveira**
 
 **Copyright © 2026 — Todos os direitos reservados.**
 
