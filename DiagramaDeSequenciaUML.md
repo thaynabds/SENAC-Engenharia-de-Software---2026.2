@@ -1,38 +1,62 @@
-sequenceDiagram
-    autonumber
-    actor Usuario as Usuário
-    participant Tela as TelaDeLogin
-    participant Servidor as Servidor
-    participant BD as BancoDeDados
+# Atividade: Diagrama de Sequência UML
 
-    Usuario->>Tela: Informa credenciais (login e senha)
-    Tela->>Servidor: Envia requisição de login
-    Servidor->>BD: Consulta credenciais
-    BD-->>Servidor: Retorna dados do usuário
+**Aluna:** Thayná Batista da Silva
 
-    alt Cenário 1: Login Bem-Sucedido
-        Servidor-->>Tela: Autenticação confirmada (Sucesso)
-        Tela-->>Usuario: Exibe painel/home logado
-    else Cenário 2: Login com Falha (Senha Incorreta)
-        Servidor-->>Tela: Retorna erro (Senha incorreta)
-        Tela-->>Usuario: Exibe mensagem de erro
-    end
+**Curso:** Tecnólogo em Análise e Desenvolvimento de Sistemas
 
----
+**Unidade Curricular:** Engenharia de Software
 
-sequenceDiagram
-    autonumber
-    actor Usuario as Usuário
-    participant Site as Site
-    participant Servico as Serviço Web de Lances
+**Professora:** Sônia Gomes
 
-    Usuario->>Site: Seleciona um produto
-    Site-->>Usuario: Mostra o produto
-    Usuario->>Site: Dá lance
-    Site->>Servico: Envia lance
-    Servico-->>Site: Confirma lance
-    Site-->>Usuario: Exibe tela de OK
-    Servico->>Usuario: Dispara e-mail com informações do lance
+## Legenda de notação
+
+| Elemento | Significado |
+|---|---|
+| Linha sólida com seta cheia | Mensagem síncrona |
+| Linha tracejada com seta aberta | Mensagem de retorno |
+| Linha sólida com seta aberta | Mensagem assíncrona |
+| Retângulo laranja | Caixa de ativação |
+| Retângulo `alt` | Fragmento de alternativa (if/else) |
+
+## Atividade Prática 1: Processo de Login
+
+**Participantes:** Usuário (Ator), TelaDeLogin, Servidor, BancoDeDados
+
+**Cenário 1:** login bem-sucedido.
+**Cenário 2:** login com falha (senha incorreta), tratado com o fragmento `alt`.
+
+![Diagrama de sequência de login](diagrama1_login.png)
+
+Fluxo:
+1. Usuário digita usuário e senha na TelaDeLogin.
+2. TelaDeLogin envia as credenciais ao Servidor para validação.
+3. Servidor consulta o usuário no BancoDeDados.
+4. BancoDeDados retorna os dados do usuário.
+5. `alt` [senha correta]: Servidor retorna autorização e a TelaDeLogin exibe a tela principal.
+   [senha incorreta]: Servidor nega o login e a TelaDeLogin exibe mensagem de erro.
+
+## Atividade Prática 2: Lance em Produto
+
+**Participantes:** Usuário (Ator), Site, ServicoWebDeLances
+
+![Diagrama de sequência de lance em produto](diagrama2_lance.png)
+
+Fluxo:
+1. Usuário seleciona um produto no Site.
+2. Site retorna os dados do produto.
+3. Usuário dá um lance no Site.
+4. Site envia o lance para o ServicoWebDeLances.
+5. ServicoWebDeLances confirma o recebimento ao Site.
+6. Site exibe tela de confirmação (OK) ao usuário.
+7. ServicoWebDeLances dispara e-mail assíncrono ao usuário com as informações do lance.
+
+## Referências
+
+- Creately. (2025). *Sequence Diagram Tutorial - Complete Guide with Examples*.
+- Figma. (n.d.). *What is a sequence diagram?*.
+- GeeksforGeeks. (n.d.). *Sequence Diagrams - Unified Modeling Language (UML)*.
+- Lucidchart. (n.d.). *UML Sequence Diagram Tutorial*.
+- Miro. (2025). *What is a UML Sequence Diagram? | Ultimate Guide*.
 
 ---
 
